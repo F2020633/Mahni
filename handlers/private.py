@@ -9,20 +9,20 @@ from helpers.filters import command, other_filters2
 async def start(_, message: Message):
                 await message.reply_photo(
                 "https://images.app.goo.gl/nN5D6nR5ZKEgLmLa6",
-  caption=(f"""**Salam {message.from_user.mention} 🎧\nMen {bot}!\nSesli söhbetlerde mahnı oxuda bilen botam. Ban yetkisiz, Sesi idare etme yetkisi verib, Asistanı gruba elave edin.\n\nDesign By  [RowlynBots 🎰](https://t.me/NemesisChat).**"""),
+  caption=(f"""**Salam {message.from_user.mention} 🎧\nMen {bot}!\nSesli söhbetlerde mahnı oxuda bilen botam. Ban yetkisiz, Sesi idare etme yetkisi verib, Asistanı gruba elave edin.\n\nDesign By  [ZevaBots 🎰](https://t.me/ZevaSUP).**"""),
          reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "😴 ❰ Grubuna elave et ❱ ✝️", url=f"https://t.me/nemesismusicrobot?startgroup=true"
+                        "😴 ❰ Grubuna elave et ❱ ✝️", url=f"https://t.me/ZevaMusicBot?startgroup=true"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🎥 Asistan", url="https://t.me/NemesisMusicAsistan"
+                        "🎥 Asistan", url="https://t.me/ZevaMusicBotAssistant"
                     ),
                     InlineKeyboardButton(
-                        "💬 Söhbet", url="https://t.me/NemesisChat"
+                        "💬 Söhbet", url="https://t.me/ZevaSUP"
                     )
                 ],
                 [
@@ -30,7 +30,7 @@ async def start(_, message: Message):
                         "💎 Emrler" , callback_data= "cbmelumat"
                     ),
                     InlineKeyboardButton(
-                        "Resmi Kanal 🇦🇿", url=f"https://t.me/RowlynBots"
+                        "Resmi Kanal 🇦🇿", url=f"https://t.me/ZevaBots"
                     )
                 ]
                 
@@ -82,7 +82,7 @@ async def cbmelumat(_, query: CallbackQuery):
         ],
         [
           InlineKeyboardButton(
-            "⚙ Quraşdırıcı", url="https://t.me/Rowlyn")
+            "⚙ Quraşdırıcı", url="https://t.me/Zevadida")
         
      ]]
      ))
@@ -96,7 +96,7 @@ async def herkes(_, query: CallbackQuery):
              [
                  [
                      InlineKeyboardButton(
-                         "⚙ Quraşdırıcı", url="https://t.me/Rowlyn")
+                         "⚙ Quraşdırıcı", url="https://t.me/Zevadida")
                  ],
                  [
                      InlineKeyboardButton(
@@ -114,7 +114,7 @@ async def admin(_, query: CallbackQuery):
              [
                  [
                      InlineKeyboardButton(
-                         "⚙ Quraşdırıcı", url="https://t.me/Rowlyn")
+                         "⚙ Quraşdırıcı", url="https://t.me/Zevadida")
                  ],
                  [
                      InlineKeyboardButton(
@@ -127,20 +127,20 @@ async def admin(_, query: CallbackQuery):
 
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
-    await query.edit_message_text(f"""**Salam {query.from_user.mention} 🎵\nMen {bot}!\nSesli söhbetlerde mahnı oxuda bilen botam. Ban yetkisiz, Sesi idare etme yetkisi verib, Asistanı gruba elave et.\n\nDesign By [RowlynBots 😝](https://t.me/NemesisChat).**""",
+    await query.edit_message_text(f"""**Salam {query.from_user.mention} 🎵\nMen {bot}!\nSesli söhbetlerde mahnı oxuda bilen botam. Ban yetkisiz, Sesi idare etme yetkisi verib, Asistanı gruba elave et.\n\nDesign By [ZevaBots 😝](https://t.me/ZevaSUP).**""",
          reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "✝️ ❰ Grubuna Elave Et ❱ ✝️", url=f"https://t.me/nemesismusicrobot?startgroup=true"
+                        "✝️ ❰ Grubuna Elave Et ❱ ✝️", url=f"https://t.me/ZevaMusicBot?startgroup=true"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🎥 Asistan", url="https://t.me/nemesismusicasistan"
+                        "🎥 Asistan", url="https://t.me/ZevaMusicBotAssistant"
                     ),
                     InlineKeyboardButton(
-                        "💬 Söhbet", url="https://t.me/Nemesischat"
+                        "💬 Söhbet", url="https://t.me/ZevaSUP"
                     )
                 ],
                 [
@@ -148,7 +148,7 @@ async def cbstart(_, query: CallbackQuery):
                         "⚡ Emrler" , callback_data= "cbmelumat"
                     ),
                     InlineKeyboardButton(
-                        "Resmi Kanal 🇦🇿", url=f"https://t.me/RowlynBots"
+                        "Resmi Kanal 🇦🇿", url=f"https://t.me/ZevaBots"
                     )
                 ]
                 
