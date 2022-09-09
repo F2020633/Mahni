@@ -56,7 +56,7 @@ async def melumat(_, message: Message):
                          "Ana menyu🌃", callback_data="cbstart")
                  ],[
                      InlineKeyboardButton(
-                         "⚙ Quraşdırıcı", url="https://t.me/Rowlyn")
+                         "⚙ Quraşdırıcı", url="https://t.me/Zevadida")
                  ]
              ]
          )
